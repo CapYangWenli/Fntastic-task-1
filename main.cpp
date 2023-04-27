@@ -33,7 +33,7 @@ std::wstring process_string(const std::wstring &input) {
 
 int main() {
 
-    // конфигурирую поддержку кириллицы в стадартном выводе 
+    // Конфигурация кириллицы в стадартном выводе 
     std::ios::sync_with_stdio(false);
     std::wcin.imbue(std::locale("en_US.UTF-8"));
     std::wcout.imbue(std::locale("en_US.UTF-8"));
