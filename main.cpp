@@ -9,10 +9,10 @@
 std::wstring process_string(const std::wstring &input) {
     std::wstring lowercase_input = input;
 
-    // убираю капитализацию
+    // Стерение капитализации
     std::transform(input.begin(), input.end(), lowercase_input.begin(), ::towlower);
 
-    // хэш сэт для отслеживание чистоты букв
+    // Хэш сэт для отслеживания чистоты букв
     std::unordered_map<wchar_t, int> char_count;
     for (wchar_t c : lowercase_input) {
         char_count[c]++;
